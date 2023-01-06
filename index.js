@@ -90,10 +90,21 @@ var finances = [
 
 // The total number of months included in the dataset.
 
-
+let monthsTotal = finances.length
+console.log(monthsTotal)
 
 
 // The net total amount of Profit/Losses over the entire period.
+
+let totalNet = 0
+
+for (let i = 0; i < monthsTotal; i++) {
+    if (typeof finances[i] === "number") {
+        
+    }
+    
+}
+
 
 
 // The average of the changes in Profit/Losses over the entire period.
