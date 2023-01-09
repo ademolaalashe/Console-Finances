@@ -103,7 +103,7 @@ for (let i = 0; i < monthsTotal; i++) {
     
 }
 
-console.log("Total net sum: $" + totalNet)
+console.log("Total: $" + totalNet)
 
 
 // The average of the changes in Profit/Losses over the entire period.
@@ -123,7 +123,7 @@ let profitDifferencesTotal = profitDifferences.reduce ((accumulator, value) => {
 
 let profitDifferencesAverage = profitDifferencesTotal/(monthsTotal-1)
 
-console.log("Profit average differences: $" + profitDifferencesAverage.toFixed(2))
+console.log("Average Change: $" + profitDifferencesAverage.toFixed(2))
 
 
 // The greatest increase in profits (date and amount) over the entire period.
