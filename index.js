@@ -105,7 +105,6 @@ for (let i = 0; i < monthsTotal; i++) {
 
 console.log("Total: $" + totalNet)
 
-
 // The average of the changes in Profit/Losses over the entire period.
 
 // Calculate the difference between the months
@@ -141,7 +140,7 @@ let minimumMonth = finances[profitDifferences.indexOf(minimum) + 1][0]
 console.log("Greatest decrease in Profits: " + minimumMonth + " ($" + minimum + ")")
 
 
-// console.table(finances)
+console.table(finances)
 
 
 // Code visualization (for personal use only)
