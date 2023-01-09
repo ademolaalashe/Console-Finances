@@ -91,7 +91,7 @@ var finances = [
 // The total number of months included in the dataset.
 
 let monthsTotal = finances.length
-console.log(monthsTotal)
+console.log("Total months:" , monthsTotal)
 
 
 // The net total amount of Profit/Losses over the entire period.
@@ -103,7 +103,7 @@ for (let i = 0; i < monthsTotal; i++) {
     
 }
 
-console.log(totalNet)
+console.log("Total net sum: $" + totalNet)
 
 
 // The average of the changes in Profit/Losses over the entire period.
@@ -123,49 +123,58 @@ let profitDifferencesTotal = profitDifferences.reduce ((accumulator, value) => {
 
 let profitDifferencesAverage = profitDifferencesTotal/(monthsTotal-1)
 
-console.log(profitDifferencesAverage.toFixed(2))
+console.log("Profit average differences: $" + profitDifferencesAverage.toFixed(2))
+
+
+// The greatest increase in profits (date and amount) over the entire period.
+
+let maximum = Math.max(...profitDifferences)
+let maximumMonth = finances[profitDifferences.indexOf(maximum) + 1][0]
+
+console.log("Greatest Increase in Profits: " + maximumMonth + " ($" + maximum + ")")
+
+// The greatest decrease in losses (date and amount) over the entire period.
+
+let minimum = Math.min(...profitDifferences)
+let minimumMonth = finances[profitDifferences.indexOf(minimum) + 1][0]
+
+console.log("Greatest decrease in Profits: " + minimumMonth + " ($" + minimum + ")")
 
 
 // console.table(finances)
 
 
-// The greatest increase in profits (date and amount) over the entire period.
+// Code visualization (for personal use only)
 
-let firstData = finances[0];
-let firstDataMonthName = firstData[0];
-let firstDataMonthProfit = firstData[1];
+// let firstData = finances[0];
+// let firstDataMonthName = firstData[0];
+// let firstDataMonthProfit = firstData[1];
 
-let secondDataProfit = finances[1][1];
+// let secondDataProfit = finances[1][1];
 
-let greatestIncrease = 0;
-console.log(greatestIncrease)
+// let greatestIncrease = 0;
+// console.log(greatestIncrease)
 
-for (let i = 1; i < monthsTotal; i++) {
-    // extract the data we need for our uequations
+// for (let i = 1; i < monthsTotal; i++) {
+//     // extract the data we need for our equations
 
-    let lastMonthInfo = finances[i-1];
-    let thisMonthInfo = finances[i];
+//     let lastMonthInfo = finances[i-1];
+//     let thisMonthInfo = finances[i];
 
-    console.log('comparing ' + thisMonthInfo[0] + ' to ' + lastMonthInfo[0])
-    console.log('greatest is currently: ' + greatestIncrease);
-    let lastMonthProfit = lastMonthInfo[1]; // === finances[0][1]
-    let thisMonthProfit = thisMonthInfo[1];
-    // find the diff betweend last and this month
-    let difference = thisMonthProfit - lastMonthProfit;
+//     console.log('comparing ' + thisMonthInfo[0] + ' to ' + lastMonthInfo[0])
+//     console.log('greatest is currently: ' + greatestIncrease);
+//     let lastMonthProfit = lastMonthInfo[1]; // === finances[0][1]
+//     let thisMonthProfit = thisMonthInfo[1];
+//     // find the difference betweenn last and this month
+//     let difference = thisMonthProfit - lastMonthProfit;
 
-    //  if the difference is greater than greatest increase
-    if (difference > greatestIncrease) {
-        // -- assign difference to greatest increase 
-        greatestIncrease = difference;
-        console.log('new greatest increase is: ' + greatestIncrease);
-    }
+//     //  if the difference is greater than greatest increase
+//     if (difference > greatestIncrease) {
+//         // -- assign difference to greatest increase 
+//         greatestIncrease = difference;
+//         console.log('new greatest increase is: ' + greatestIncrease);
+//     }
 
-}
-
-
-
-
-// The greatest decrease in losses (date and amount) over the entire period.
-
+// }
 
 
