@@ -10,3 +10,18 @@ The goal is to write a JavaScript code that analyzes the records to calculate ea
 - The average of the changes in Profit/Losses over the entire period.
 - The greatest increase in profits (date and amount) over the entire period.
 - The greatest decrease in losses (date and amount) over the entire period.
+
+## Steps to access financial results:
+
+- Right click and select "inspect".
+- Now, select the "console" to financial information.
+
+
+
+
+
+## Credits
+
+Alexandra Batrak - For assisting and most importantly taking the time to answer any questions I had. Alexandra has been of great help. You can view Alexandra's repo here: https://github.com/alexandrabatrak
+
+Tutor - Tutoring session also helped with further understanding.
