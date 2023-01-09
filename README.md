@@ -17,6 +17,11 @@ The goal is to write a JavaScript code that analyzes the records to calculate ea
 - Now, select the "console" to financial information.
 
 
+![FDR](https://github.com/ademolaalashe/Console-Finances/blob/main/FDR.png)
+
+
+
+
 
 
 
