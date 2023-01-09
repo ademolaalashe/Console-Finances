@@ -20,8 +20,15 @@ The goal is to write a JavaScript code that analyzes the records to calculate ea
 
 
 
+
+
+
 ## Credits
 
 Alexandra Batrak - For assisting and most importantly taking the time to answer any questions I had. Alexandra has been of great help. You can view Alexandra's repo here: https://github.com/alexandrabatrak
 
 Tutor - Tutoring session also helped with further understanding.
+
+Repository: https://github.com/ademolaalashe/Console-Finances
+
+Project: https://ademolaalashe.github.io/Console-Finances/
